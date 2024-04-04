@@ -1,0 +1,84 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 50px auto;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  position: relative;
+  border-radius: 1%;
+}
+
+.about-container::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(5, 0, 0, 0.2);
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.about-container h1,
+.about-container h2,
+.about-container h3 {
+  color: #333;
+}
+
+.about-container p {
+  color: #666;
+}
+
+.about-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-container h2 {
+  font-size: 1.5rem;
+}
+
+.about-container h3 {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-container blockquote {
+  font-style: italic;
+  margin: 0;
+}
+
+.about-container img {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 580%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik+Scribble&family=Sriracha&display=swap");
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  width: 80%;
+  margin: auto;
+}
+
+.testimonial-card {
+  background: linear-gradient(45deg, #ffffff, #fffff0, #ffe4b5);
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 3px green;
+}
+
+.testimonial-card.active {
+  position: static;
+  opacity: 1;
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-card h2,
+.testimonial-card p {
+  font-family: "Sriracha", "cursive";
+  text-align: center;
+}

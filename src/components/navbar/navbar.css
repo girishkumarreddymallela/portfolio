@@ -1,0 +1,61 @@
+/* Navbar.css */
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+.navbar-C {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 0px;
+}
+
+.navbar-left {
+  width: 6rem;
+  margin-left: 25px;
+  padding-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .navbar-left {
+    width: 6.9rem;
+    margin-left: 0px;
+  }
+}
+.navbar-logo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.navbar-right {
+  width: 80%;
+  margin-right: 130px;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1200px) {
+  .navbar-right {
+    justify-content: flex-end;
+    margin-right: 0px;
+  }
+}
+.navbar-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navbar-item {
+  font-size: 1.2rem;
+  font-family: "Nothing You Could Do", cursive;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.navbar-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}

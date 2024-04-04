@@ -1,0 +1,66 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 10px;
+}
+
+.skill-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .skill-card {
+    margin: 5px;
+  }
+}
+
+.skill-card img {
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill-card h2 {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill-card p {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill-card:hover img {
+  opacity: 0.08;
+}
+
+.skill-card:hover h2 {
+  opacity: 1;
+  font-weight: bolder;
+}
+
+.skill-card:hover p {
+  opacity: 1;
+  font-weight: bolder;
+  color: blueviolet;
+}

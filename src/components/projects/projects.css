@@ -1,0 +1,106 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.my-button {
+  padding: 4px 8px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #006a8a;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  flex: 1 0 21%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    flex: 1 0 46%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-card {
+    flex: 1 0 96%;
+    padding: 0px;
+  }
+}
+
+.project-card img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.project-card img {
+  transition: transform 0.9s ease-in-out;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card h2,
+.project-card p {
+  text-align: center;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+
+  border: 1px solid #888;
+  width: 90vw;
+  border-radius: 5px;
+}
+
+.modal-img {
+  width: 90vw;
+}
+.close-button {
+  color: black;
+  float: right;
+  font-size: 48px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nothing+You+Could+Do&family=Rubik+Scribble&family=Sriracha&display=swap");
+
+@media (max-width: 1200px) {
+  .timeline-image {
+    display: none;
+  }
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  border: solid 2px black;
+}
+
+.timeline-item h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.timeline-item ul {
+  padding-left: 20px;
+}
+
+.timeline-item ul li {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.timeline-image img {
+  border-radius: 10px;
+}
+
+.svg-txt {
+  font-family: "Great Vibes", "cursive";
+}

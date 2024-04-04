@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik+Scribble&display=swap");
+
+.heading {
+  font-family: "Rubik Scribble", system-ui;
+  text-align: center;
+  text-shadow: 5px 5px 20px rgba(255, 69, 0, 0.9);
+}
